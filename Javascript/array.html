@@ -1,23 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <script>
-        var array=[1,15,35,7,-46,0,17,44,8];
-var count=0;
-for(let i=0; i<array.length; i++)
-{
-    if(array[i] >= 0 && array[i] <=9)
-    {
-        count++;
-    }  
-}
-console.log('{' + array + '}' + ' arrayında ' + count + ' rəqəm var.');
+        var array = [1, 15, 35, 7, -46, 0, 17, 44, 8];
+        var count = 0;
+        for (let i = 0; i < array.length; i++) {
+            if (array[i] >= 0 && array[i] <= 9) {
+                count++;
+            }
+        }
+        console.log('{' + array + '}' + ' arrayında ' + count + ' rəqəm var.');
+
+        var i = 0;
+        var small = 0;
+        var arr = [5, 8, 2, 15, 84];
+
+        small = arr[0];
+
+        for (i = 1; i < arr.Length; i++) {
+
+            if (small > arr[i])
+                small = arr[i];
+        }
+
+        Console.log("Smallest element in array: " + small);
     </script>
 </body>
+
 </html>
